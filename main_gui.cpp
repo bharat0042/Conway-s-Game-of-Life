@@ -39,6 +39,10 @@ void MainGui::drawGrid(sf::RenderWindow& win)
     }
 }
 
+/*
+ * Important thing to note here is that, (x,y) coordinates of the screen map to the (col,row) of a matrix.
+ * So the x depends on col and y depends on row in setPosition function.
+ */
 void MainGui::initGrid()
 {
     for(int i = 0; i < m_Rows; i++)
